@@ -11,5 +11,7 @@ URL Carver lives in the menu bar. With a URL in your clipboard, click and see th
 
 ## Change Log
 
+| Version | |
+|---------|-|
 | 1.0.1 | Fix collapsed query parameters table after inspecting a non-URL |
 | 1.0   | Initial release                                                 |
