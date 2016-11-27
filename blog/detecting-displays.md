@@ -35,7 +35,7 @@ First, the design for the app is not particularly important. I chose one of the 
 The heavy lifting gets done with the callback function ReconfigurationCallBack.
 
 ```objc
-void ReconfigurationCallBack (CGDirectDisplayID display, CGDisplayChangeSummaryFlags flags,void *userInfo){
+void ReconfigurationCallBack (CGDirectDisplayID display, CGDisplayChangeSummaryFlags flags, void *userInfo){
     CGDisplayCount onlineDisplays;
     CGDisplayCount activeDisplays;
     CGDisplayCount maxDisplays = 3;
@@ -85,7 +85,7 @@ void ReconfigurationCallBack (CGDirectDisplayID display, CGDisplayChangeSummaryF
 }
 ```
 
-This function uses another function I wrote when working with Display services to decode the `CGErrors` that come up:
+This function uses another function I wrote when working with Display services to decode the `CGError`s that come up:
 
 ```objc
 NSString* CGErrorToString(CGError err){
@@ -130,9 +130,10 @@ NSString* CGErrorToString(CGError err){
             return @"The requested operation could not be completed as the indicated resources were not found.";
             break;
         default:
-            return @"An error occured but its code is unknown by Quartz Display Services as of v10.5.7";
+            return @"An error occurred but its code is unknown by Quartz Display Services as of v10.5.7";
             break;
     }
 }
+```
 
 Whichever files these three code blocks end up in, they each need to have access to the Application Services framework, and so it must be added to the project and the appropriate header must be included
