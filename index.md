@@ -8,5 +8,5 @@ Previously
 * 📱 Software Consultant at [MojoTech](https://www.mojotech.com)
 * 🗺 Principal Software Engineer at [MapQuest/AOL](https://mobile.mapquest.com)
 * 🎓 University of Colorado in Boulder
-* 🤖 ihmc
+* 🤖 Robotics at [ihmc](https://www.ihmc.us)
 * 🎓 Cornell University
