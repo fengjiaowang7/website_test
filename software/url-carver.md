@@ -5,6 +5,8 @@ URL Carver lives in the menu bar <img src="url-carver-icon.png" style="height:1e
 ## Download
 * [URL Carver](URL-Carver.zip) version 1.0.1
 
+<img src="./url-carver-screenshot.png" width="372"/>
+
 ## Change Log
 
 | Version | |
