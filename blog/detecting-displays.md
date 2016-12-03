@@ -7,7 +7,7 @@ I’m writing this particular post because I know that Java has some [problems](
 
 First, the design for the app is not particularly important. I chose one of the easier paths, but probably not the sleekest. I made a new Cocoa application, defined a new Cocoa object named Detector, and put an instance of it in the application’s nib file so it one would get initialized as soon as the app started running. All the object does is register a function callback for notifications when it’s loaded, and stop the function from being called when the object is deallocated (the program exits). As I said, this was just what I decided to do to get the thing up and running as fast as possible. It’s only important to mention so the code actually makes sense.
 
-```objc
+```objectivec
 @implementation Detector
 
 -(void) awakeFromNib
@@ -34,7 +34,7 @@ First, the design for the app is not particularly important. I chose one of the 
 
 The heavy lifting gets done with the callback function ReconfigurationCallBack.
 
-```objc
+```objectivec
 void ReconfigurationCallBack (CGDirectDisplayID display, CGDisplayChangeSummaryFlags flags, void *userInfo){
     CGDisplayCount onlineDisplays;
     CGDisplayCount activeDisplays;
@@ -87,7 +87,7 @@ void ReconfigurationCallBack (CGDirectDisplayID display, CGDisplayChangeSummaryF
 
 This function uses another function I wrote when working with Display services to decode the `CGError`s that come up:
 
-```objc
+```objectivec
 NSString* CGErrorToString(CGError err){
     switch (err) {
         case kCGErrorSuccess:

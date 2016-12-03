@@ -1,5 +1,5 @@
 <header>
-<img src="http://static1.squarespace.com/static/53e976eae4b0162bed56938c/t/5442acbbe4b02f1c0e5471cc/1413655742534/?format=original" width="500"/>
+<img src="duplicate-windows.png" width="500"/>
 </header>
 
 Duplicate Windows is a utility that lets you clone any window on your Mac. The copy will always show what the original window shows. It's like display mirroring for individual windows!
@@ -125,7 +125,7 @@ c-0.602,0-1.078,0.524-1.146,1.242H120.209z"/>
 ---
 
 ## Duplicate any window
-<figure><img src="http://static1.squarespace.com/static/53e976eae4b0162bed56938c/t/53eadb1ae4b029de51566eaf/1407900455736/availableWindows.png?format=original" width="350"/>
+<figure><img src="duplicate-windows-select.png" width="350"/>
 </figure>
 
 Select any window on your Mac, and get an instant resizable copy that stays up to date with the original. Resize the copy. Set it above all other windows. Make as many copies of as many windows as you like.
@@ -138,6 +138,6 @@ Monitor your servers. Watch web video. Keep an eye on any window you like. Just 
 ---
 
 ## Presenter tools for any software.
-<figure><img src="http://static1.squarespace.com/static/53e976eae4b0162bed56938c/t/53eadb88e4b029de51566f48/1407900634448/?format=original" width="350"/>
+<figure><img src="duplicate-windows-duplicating.png" width="350"/>
 </figure>
 You can duplicate windows across monitors. Drive a software demo with your notes right along side on your laptop screen, while only projecting the software you're demoing.

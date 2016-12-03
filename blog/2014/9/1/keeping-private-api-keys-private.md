@@ -28,13 +28,13 @@ With this approach, you can keep a different Keys file for different environment
 
 You'll need to configure your project's build settings to use the configurations files like so:
 
-![](http://static1.squarespace.com/static/53e976eae4b0162bed56938c/53e9780ce4b0b27e29a5e76d/54050699e4b0f72d40bb93e4/1409615514203//img.png)
+![](build-settings.png)
 
 ## Configuring a Target
 
 There's a great additional advantage to having values as preprocessor directives. They're available as symbols in you app's plist, meaning you can create URL scheme handlers like `fb${FACEBOOK_APPLICATION_ID}` and they'll always be configured correctly for your environment (incredibly useful for Facebook sign-in in development and production environments).
 
-![](http://static1.squarespace.com/static/53e976eae4b0162bed56938c/53e9780ce4b0b27e29a5e76d/5404ff68e4b0a7034afd83d9/1409613672966//img.png)
+![](url-scheme.png)
 
 You can also keep separate bundle identifiers for the same target (useful for things like Enterprise distribution, and separate installs on the same phone from the same target). You can also configure product names, or anything else.
 

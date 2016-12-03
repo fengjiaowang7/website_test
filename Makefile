@@ -2,7 +2,7 @@ TEMPLATE = ./template.tmp
 CSS = writ.min.css
 
 # Rule for converting github flavored markdown to html5
-MARKDOWN := pandoc --template $(TEMPLATE) -c $(CSS) --from markdown_github+pandoc_title_block --to html5 --standalone -B nav.tmp
+MARKDOWN := pandoc --template $(TEMPLATE) -c $(CSS) --from markdown_github+pandoc_title_block --highlight-style haddock --to html5 --standalone -B nav.tmp
 
 DEPLOY = deploy
 # Deploy directory.
@@ -77,6 +77,11 @@ $(addprefix $(DEPLOY_DIRECTORY),%.css): %.css
 	@cp $< $@
 
 $(addprefix $(DEPLOY_DIRECTORY),%.zip): %.zip
+	@echo Moving $< to $@
+	@mkdir -p $(dir $@)
+	@cp $< $@
+
+$(addprefix $(DEPLOY_DIRECTORY),%.pdf): %.pdf
 	@echo Moving $< to $@
 	@mkdir -p $(dir $@)
 	@cp $< $@
