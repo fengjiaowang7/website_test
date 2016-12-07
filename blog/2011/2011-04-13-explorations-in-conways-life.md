@@ -1,0 +1,122 @@
+% Explorations in Conway's Life
+% 2011-04-13
+
+[Conway's Game of Life](http://en.wikipedia.org/wiki/Conway) is a set of rules for a a cellular automata, an infinite lattice of cells that are either alive or dead at any step in time. A few simple rules form the basis for an entire universe of possibilities.
+
+From Wikipedia:
+<blockquote>
+1. Any live cell with fewer than two live neighbours dies, as if caused by under-population.
+1. Any live cell with two or three live neighbours lives on to the next generation.
+1. Any live cell with more than three live neighbours dies, as if by overcrowding.
+1. Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.
+</blockquote>
+
+I came back to it to explore its potential as a virtual world for virtual agents to develop knowledge representations. I made a simple implementation in MATLAB to calculate a single time step:
+
+```matlab
+function grid = life(grid)
+% 	LIFE outputs the next step to a game of life
+% 		[GRID] = LIFE
+%
+% 	Outputs the next step of conway's life
+%
+
+% Number of neighbors:
+neighbors = conv2(grid,[1 1 1; 1 0 1; 1 1 1],'same');
+
+% Any live cell with fewer than two live neighbors dies, as if caused by under-population.
+grid(neighbors&lt;2) = 0;
+
+% Any live cell with more than three live neighbors dies, as if by overcrowding.
+grid(neighbors>3) = 0;
+
+% Any dead cell with exactly three live neighbors becomes a live cell, as if by reproduction.
+grid(neighbors==3) = 1;
+
+% Any live cell with two or three live neighbors lives on to the next generation.
+% free
+end % function
+```
+
+Below is a standard visualization of a form called “Diehard”, so named because it has a lifespan of 130 steps, remarkable for a pattern with just 7 live cells to start:
+
+> missing
+
+The real fun starts when I take each time step from a run and layer it on top of the previous one, creating a three-dimensional representation of the beast.
+
+<div class="video-wrapper"><div class="video cover" data-thumb="https://i.vimeocdn.com/video/144204536.jpg?mw=600&amp;mh=1578&amp;q=70" data-thumb-width="600" style="background-image: none;"><div class="telecine" style="transform: scale(1.0001408450704226);"><video preload="" src="https://06-lvl3-pdl.vimeocdn.com/01/4464/0/22320277/46472404.mp4?expires=1480787262&amp;token=0ce29e8223c4917030654" loop=""></video></div></div></div>
+
+If you want to play with the source, it's shown below.
+
+I use inject as a utility to paste from a library of patterns into the “world” :
+
+```matlab
+function grid = inject(grid,pattern,x,y)
+  % 	INJECT inject pattern into grid at position x, y
+  % 		[GRID] =
+  %
+  % 	inject pattern into grid at position x, y
+  %
+  % 	Created by Fabian Canas on 2011-04-12.
+  % 	Copyright © Fabian Canas. All rights reserved.
+
+  [w,h] = size(pattern);
+  grid(x:(x+w-1),y:(y+h-1))=pattern;
+end % function
+```
+
+And here's the script that generates the animation above:
+
+```matlab
+diehard = [ ...
+  0 0 0 0 0 0 1 0; ...
+  1 1 0 0 0 0 0 0; ...
+  0 1 0 0 0 1 1 1; ...
+];
+g = zeros(30);
+g = inject(g,diehard,15,15);
+
+fg = g;
+figure
+while (true)
+  gp = life(g);
+  if gp==g
+    break;
+  end
+  g = gp;
+  fg = cat(3,fg,g);
+end
+
+h = patch(isosurface(fg));
+
+axis equal
+axis off
+
+light('Position',[-2,2,20])
+lighting phong
+material([0.4,0.6,0.5,30])
+set(h,'EdgeAlpha',0)
+set(h,'FaceColor',[0.2 0.5 0.1],...
+      'BackFaceLighting','lit')
+drawnow
+set(gcf, 'Position', [552 -17 200 801])
+for i=0:179
+  view([i 0])
+  print(gcf, '-dtiff', '-r100', sprintf('image_%04d', i));
+  drawnow
+end
+```
+
+Incidentally, I also worked out a few compact versions of Life in MATLB. The shortest of the two weights in at 85 characters, but runs indefinitely. The second outputs only nine steps to the console, which is about as long a run as you're likely to get given a random 9×9 grid:
+
+```matlab
+g=rand(9)>.5;p=ones(3);p(5)=0;while(1)n=conv2(double(g),p,'same');g=(n==3|g&n==2),end
+
+g=rand(9)>.5;p=ones(3);p(5)=0;for(i=[1:9])n=conv2(double(g),p,'same');g=(n==3|g&n==2),end
+```
+
+The longer of the three is more fun and actually draws the grid to a window. It's still lightweight at 105 characters. It too runs until you kill it:
+
+```matlab
+g=rand(25)>.5;p=ones(3);p(5)=0;while(1)n=conv2(double(g),p,'same');g=(n==3|g&n==2);imagesc(g);drawnow;end
+```

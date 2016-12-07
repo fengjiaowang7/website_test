@@ -99,5 +99,8 @@ deploy: bake
 	git commit -m 'Deploy'
 	git subtree push --prefix=$(DEPLOY) $(REMOTE) $(BRANCH)
 
+deploy-only:
+	git subtree push --prefix=$(DEPLOY) $(REMOTE) $(BRANCH)
+
 undeploy:
 	git push $(REMOTE) `git subtree split --prefix $(DEPLOY) $(BRANCH)`:$(BRANCH) --force
