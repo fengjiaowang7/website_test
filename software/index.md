@@ -18,7 +18,7 @@ TrustyBook lets you customize the appearance of the app to suit your tastes and 
 
 [Find out more about TrustyBook](trustybook.html)
 
----
+<hr style='clear: both;' />
 
 ## URL Carver
 
