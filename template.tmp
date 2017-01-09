@@ -24,6 +24,9 @@ $endif$
 $for(css)$
   <link rel="stylesheet" href="/$css$">
 $endfor$
+$for(meta)$
+  <meta name="$meta.name$" content="$meta.content$" />
+$endfor$
 </head>
 <body>
 <header>
