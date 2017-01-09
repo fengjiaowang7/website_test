@@ -1,4 +1,15 @@
-% URL Carver
+---
+title: URL Carver
+meta:
+- name: "twitter:card"
+  content: "summary"
+- name: "twitter:site"
+  content: "@fcanas"
+- name: "twitter:title"
+  content: "URL Carver"
+- name: "twitter:description"
+  content: "URL inspection utility for macOS"
+---
 
 URL Carver lives in the menu bar <img src="url-carver-icon.png" style="height:1em"/>. With a URL in your clipboard, click and see the URL's components based on [RFC 3986](https://www.ietf.org/rfc/rfc3986.txt).
 
