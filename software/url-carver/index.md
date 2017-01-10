@@ -9,7 +9,7 @@ meta:
   content: "URL Carver"
 - name: "twitter:description"
   content: "URL inspection utility for macOS"
-- name: "twitter:image"
+- name: "twitter:image:src"
   content: "url-carver-icon.png"
 ---
 
