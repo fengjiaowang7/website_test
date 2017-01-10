@@ -1,6 +1,21 @@
-% iOS Color Picker
-
-<a href="https://github.com/fcanas/ios-color-picker" target="_blank" class="social-github"></a>
+---
+title: iOS Color Picker
+meta:
+- name: "twitter:card"
+  content: "summary"
+- name: "twitter:site"
+  content: "@fcanas"
+- name: "twitter:title"
+  content: "iOS Color Picker"
+- name: "twitter:description"
+  content: "A reusable color picker component for iOS. Works for iPhone, iPad, in modal sheets, popovers... just about anywhere."
+- name: "og:title"
+  content: "iOS Color Picker"
+- name: "og:type"
+  content: website
+- name: "og:description"
+  content: "A reusable color picker component for iOS. Works for iPhone, iPad, in modal sheets, popovers... just about anywhere."
+---
 
 A reusable color picker component for iOS. Works for iPhone, iPad, in modal sheets, popovers... just about anywhere.
 
@@ -10,16 +25,16 @@ A reusable color picker component for iOS. Works for iPhone, iPad, in modal shee
 
 The easiest way to use iOS-Color-Picker is with [CocoaPods][0]. Add the following line to your `Podfile`.
 
-
-<pre>pod 'iOS-Color-Picker'
-</pre>
+```ruby
+pod 'iOS-Color-Picker'
+```
 
 ## Using a Color Picker from a View Controller
 
 Suppose you have a view controller with a `color` property you'd like to let the user pick. Make your view controller implement the `FCColorPickerViewControllerDelegate` protocol. Handle the color picked and the cancelled methods, and make a method that triggers showing the view controller.
 
-
-<pre>-(IBAction)chooseColor:(id)sender {
+```objectivec
+-(IBAction)chooseColor:(id)sender {
   FCColorPickerViewController *colorPicker = [FCColorPickerViewController colorPicker];
   colorPicker.color = self.color;
   colorPicker.delegate = self;
@@ -38,7 +53,7 @@ Suppose you have a view controller with a `color` property you'd like to let the
 -(void)colorPickerViewControllerDidCancel:(FCColorPickerViewController *)colorPicker {
   [self dismissViewControllerAnimated:YES completion:nil];
 }
-</pre>
+```
 
 # Example Project
 
