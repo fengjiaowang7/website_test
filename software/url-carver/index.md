@@ -11,6 +11,14 @@ meta:
   content: "URL inspection utility for macOS"
 - name: "twitter:image:src"
   content: "./url-carver-icon.png"
+- name: "og:title"
+  content: "URL Carver"
+- name: "og:type"
+  content: website
+- name: "og:description"
+  content: "URL inspection utility for macOS"
+- name: "og:image"
+  content: "./url-carver-icon.png"
 ---
 
 URL Carver lives in the menu bar <img src="url-carver-icon.png" style="height:1em"/>. With a URL in your clipboard, click and see the URL's components based on [RFC 3986](https://www.ietf.org/rfc/rfc3986.txt).
