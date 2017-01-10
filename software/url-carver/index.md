@@ -9,8 +9,6 @@ meta:
   content: "URL Carver"
 - name: "twitter:description"
   content: "URL inspection utility for macOS"
-- name: "twitter:image:src"
-  content: "./url-carver-icon.png"
 - name: "og:title"
   content: "URL Carver"
 - name: "og:type"
