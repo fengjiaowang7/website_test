@@ -86,7 +86,12 @@ $(addprefix $(DEPLOY_DIRECTORY),%.pdf): %.pdf
 	@mkdir -p $(dir $@)
 	@cp $< $@
 
-$(addprefix $(DEPLOY_DIRECTORY),CNAME): ./CNAME
+$(addprefix $(DEPLOY_DIRECTORY),%.txt): %.txt
+	@echo Moving $< to $@
+	@mkdir -p $(dir $@)
+	@cp $< $@
+
+$(addprefix $(DEPLOY_DIRECTORY),.well-known/keybase.txt): .well-known/keybase.txt
 	@echo Moving $< to $@
 	@mkdir -p $(dir $@)
 	@cp $< $@
