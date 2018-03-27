@@ -1,4 +1,5 @@
 % Keeping Private API Keys Private
+%
 % 2014-09-01
 
 I [used to](https://github.com/fcanas/DropPin/tree/c0126916482866c335f85bef87d28ca7124ee6d4) keep sensitive iOS project information in a `.gitignore`d plist like [Mike Walker](http://blog.lazerwalker.com/blog/2014/05/14/handling-private-api-keys-in-open-source-ios-apps/). Now I keep secrets in a few different `.gitignore`d xcconfig files. It turns out that xcconfig files let me flexibly configure build targets for different environments. I now use this approach in closed-source projects as well.
@@ -49,3 +50,4 @@ And reap the rewards.
 1. Manage different values for different environments
 2. Keep .gitignored files for keys out of Xcode
 3. Extensive opportunity for configuring targets with configuration files
+

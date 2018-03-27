@@ -1,4 +1,5 @@
 % Explorations in Conway's Life
+%
 % 2011-04-13
 
 [Conway's Game of Life](http://en.wikipedia.org/wiki/Conway) is a set of rules for a a cellular automata, an infinite lattice of cells that are either alive or dead at any step in time. A few simple rules form the basis for an entire universe of possibilities.
