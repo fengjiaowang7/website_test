@@ -1,8 +1,8 @@
 % Mirror Displays
 
 ## Download
-* [Mirror Displays App](https://github.com/fcanas/mirror-displays/releases/download/1.2/MirrorDisplays.zip)
-* [Command Line](https://github.com/fcanas/mirror-displays/releases/download/1.2/mirror.zip)
+* [Mirror Displays App](https://github.com/fcanas/mirror-displays/releases/download/v1.2/MirrorDisplays.zip)
+* [Command Line](https://github.com/fcanas/mirror-displays/releases/download/v1.2/mirror.zip)
 
 It takes too many steps in Mac OS X to switch between mirrored and extended desktop mode on external displays. Open System Preferences, go to the display pane, go to the Arrangement tab, and toggle the Mirror Displays checkbox. It’s a dance seen all too often before presentations when PowerPoint or Keynote are showing the presentation on the laptop screen instead of the projector.
 
