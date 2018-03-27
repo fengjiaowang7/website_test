@@ -37,7 +37,7 @@ Methods with a `void` return that don't take arguments are doubly suspicious.
 They are a very procedural in nature, and in my experience are an OOP trap into
 spaghetti code. That's not to say that these are forbidden. It can be very
 useful to capture a bit of repetitive code out of an object. But be vigilant as
-to whether a different pattern may be appropriate, such as a state machine.
+to whether a different pattern may be appropriate.
 
 ## Use Self in Methods
 
