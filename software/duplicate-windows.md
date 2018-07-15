@@ -1,3 +1,6 @@
+---
+title: Duplicate Windows
+---
 <header>
 <img src="duplicate-windows.png" width="500"/>
 </header>

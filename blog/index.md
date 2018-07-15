@@ -1,4 +1,7 @@
-
+---
+title: ''
+pagetitle: Fabián Cañas | Writing
+---
 
 ## Swift
 <ol style="list-style-type:none">

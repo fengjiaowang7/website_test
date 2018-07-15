@@ -40,7 +40,7 @@ $if(title)$
 <h1>$title$</h1>
 $endif$
 $if(date)$
-<date>$date$</h1>
+<date>$date$</date>
 $endif$
 $body$
 </article>
