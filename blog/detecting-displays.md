@@ -1,4 +1,5 @@
 % Detecting Displays
+%
 % 2009-06-23
 
 In the process of making [Mirror Displays](/open-source/mirror-displays/) I learned more or less what Quartz Display Services in Mac OS X has to offer. It more or less lets to get and set all size, position, color, gamma, mirroring settings for attached monitors. It lets you fade the monitors in and out, and lets your app monopolize output to any monitors. An important element to the Display Services though, is that you can register to be notified of any changes to the displays.

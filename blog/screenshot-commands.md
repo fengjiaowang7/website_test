@@ -1,4 +1,5 @@
 % Mac Screenshot Commands Cheat Sheet
+%
 % 2009-10-04
 
 I’m always forgetting exactly how to take screenshots on my Mac. The Shift, Command, Control, 3s and 4s all get garbled up in my head. So for my own benefit, and perhaps your own I’ve consolidated them here into a convenient list.

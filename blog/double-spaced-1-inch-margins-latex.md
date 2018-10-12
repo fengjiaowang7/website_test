@@ -1,4 +1,5 @@
 % Double-spacing and 1-inch Margins in LaTeX
+%
 % 2010-04-10
 
 Once or twice a year, I inevitably have to write a paper for a professor who wants 1-inch margins and double-spacing. Being a LaTeX user, I generally don’t concern myself with document formatting — I’ve always thought that’s the point of LaTeX: let it worry about formatting for you. As a result, I use formatting commands extraordinarily infrequently, and never actually learn them. So instead of playing around with various commands every few months until my memory gets it right, I’m going to put the appropriate snippet of code here. I know where to find it next time.
