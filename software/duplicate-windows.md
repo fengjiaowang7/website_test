@@ -144,3 +144,11 @@ Monitor your servers. Watch web video. Keep an eye on any window you like. Just 
 <figure><img src="duplicate-windows-duplicating.png" width="350"/>
 </figure>
 You can duplicate windows across monitors. Drive a software demo with your notes right along side on your laptop screen, while only projecting the software you're demoing.
+
+<br>
+
+---
+
+## Privacy Policy
+<a name="privacy-policy"></a>
+Duplicate Windows does not collect or transmit any personal information.
