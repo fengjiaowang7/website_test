@@ -45,7 +45,7 @@ ALL_IDENTITY := $(call map,filter-out,$(EXCLUDE_TYPES),$(ALL))
 # Everything that needs deploying :
 # all the identity files
 # and all the html files derived from markdown
-ALL_TO_DEPLOY = $(ALL_IDENTITY) $(HTML_FROM_MD) ./CNAME
+ALL_TO_DEPLOY = $(ALL_IDENTITY) $(HTML_FROM_MD) CNAME
 DEPLOY_TARGETS := $(subst ./,$(DEPLOY_DIRECTORY),$(ALL_TO_DEPLOY))
 
 # First recipe is default. Nothing to do except dependency on all html files.

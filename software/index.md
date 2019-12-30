@@ -14,7 +14,6 @@ Duplicate Windows lets you clone any window on your Mac. It's like display mirro
 ---
 
 ## MicroAlbum
-<figure style="float: left;"><img src='/img/TBSt.png' width=256></figure>
 
 With Micro Album you can hand your phone to a friend to share some photos without risking that they'll swipe too far and see … something 😳
 
