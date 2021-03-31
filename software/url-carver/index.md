@@ -17,10 +17,10 @@ meta:
   content: "./url-carver-icon.png"
 ---
 
-URL Carver lives in the menu bar <picture <source srcset="url-carver-icon-dark.png" media="(prefers-color-scheme: dark)">><img src="url-carver-icon.png" style="height:1em"/></picture>. With a URL in your clipboard, click and see the URL's components based on [RFC 3986](https://www.ietf.org/rfc/rfc3986.txt).
+URL Carver lives in the menu bar <picture><source srcset="url-carver-icon-dark.png" media="(prefers-color-scheme: dark)"><img src="url-carver-icon.png" style="height:1em"/></picture>. With a URL in your clipboard, click and see the URL's components based on [RFC 3986](https://www.ietf.org/rfc/rfc3986.txt).
 
 https://www.fabiancanas.com/software/url-carver?status=awesome#wow turns into
-<picture <source srcset="./url-carver-screenshot-dark.png" media="(prefers-color-scheme: dark)">><img src="./url-carver-screenshot.png" width="372"/></picture>
+<picture><source srcset="./url-carver-screenshot-dark.png" media="(prefers-color-scheme: dark)"><img src="./url-carver-screenshot.png" width="372"/></picture>
 
 ## Download
 * [URL Carver](URL-Carver.zip) version 1.0.4

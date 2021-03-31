@@ -4,10 +4,10 @@ CSS = writ.min.css
 # Rule for converting github flavored markdown to html5
 MARKDOWN := pandoc --template $(TEMPLATE) -c $(CSS) --from markdown_github+pandoc_title_block+yaml_metadata_block --highlight-style haddock --to html5 --standalone -B nav.tmp
 
-DEPLOY = deploy
+DEPLOY = fcanas.github.io-deploy
 # Deploy directory.
 # Excluded from source search. Prepended to all output files
-DEPLOY_DIRECTORY = ./$(DEPLOY)/
+DEPLOY_DIRECTORY = ../$(DEPLOY)/
 
 # Source control directory, also excluded from source search
 SRC_CTL = ./.git%
