@@ -23,12 +23,13 @@ https://www.fabiancanas.com/software/url-carver?status=awesome#wow turns into
 <picture <source srcset="./url-carver-screenshot-dark.png" media="(prefers-color-scheme: dark)">><img src="./url-carver-screenshot.png" width="372"/></picture>
 
 ## Download
-* [URL Carver](URL-Carver.zip) version 1.0.3
+* [URL Carver](URL-Carver.zip) version 1.0.4
 
 ## Change Log
 
 | Version | |
 |---------|-|
+| 1.0.4 | Add M1 support, and improve about box |
 | 1.0.3 | Enable macOS Hardened Runtime |
 | 1.0.2 | Add right-click to quit |
 | 1.0.1 | Fix collapsed query parameters table after inspecting a non-URL |
