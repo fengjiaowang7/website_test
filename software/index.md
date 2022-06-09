@@ -28,11 +28,3 @@ Quickly examine the components of a URL.
 
 [Find out more about URL Carver](url-carver/)
 
-<hr style='clear: both;' />
----
-
-## Food &amp; Symptom Log
-
-Food &amp; Symptom Log is an extremely fast and streamlined app for logging foods and medical symptoms.
-
-[Find out more about Food &amp; Symptom Log](food-symptom-log.html)
