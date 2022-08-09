@@ -28,7 +28,7 @@ Quickly examine the components of a URL.
 
 [Find out more about URL Carver](url-carver/)
 
-# Experimental
+# 🧪 Experimental ⚗️
 
 These are weirder things you might find interesting.
 
