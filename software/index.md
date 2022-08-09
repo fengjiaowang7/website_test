@@ -28,3 +28,18 @@ Quickly examine the components of a URL.
 
 [Find out more about URL Carver](url-carver/)
 
+# Experimental
+
+These are weirder things you might find interesting.
+
+## GitSwitch
+
+Idiosyncratic git branch switching for macOS.
+
+[Try it at your own risk...](/gitswitch)
+
+## TermBuddy
+
+A bookmarks bar for Terminal. It's a proof-of-concept for a little companion window for apps.
+
+[Find out if it works...](/TermBuddy/)
